@@ -11,7 +11,7 @@ options.add_argument("--disable-application-cache")
 driver = webdriver.Chrome(executable_path="/usr/bin/chromedriver", options=options)
 
 # Create a list of urls for the site that we are scraping motivational messages
-url = 'https://www.pensador.com/frases_motivacionais/'
+url = 'https://www.pensador.com/frases_de_motivacao/'
 url_list = [ f'{url}{i}' for i in range (1,11,1)]
 message_list_all = []
 
